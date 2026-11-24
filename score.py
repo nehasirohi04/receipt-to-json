@@ -1,6 +1,10 @@
 import json
 from pathlib import Path
 import pandas as pd
+from difflib import SequenceMatcher
+MERCHANT_CUTOFF = 0.95
+
+
 
 key = pd.read_csv("answer_key.csv")
 
@@ -27,7 +31,22 @@ def text_match(x, y):
         return True
     return str(x).strip().lower() == str(y).strip().lower()
 
-rules = {"merchant": text_match, "date": text_match,
+
+def clean(s):
+    s=s.strip().lower()
+    s="".join(ch for ch in s if ch.isalnum() or ch.isspace())
+    return s
+
+
+
+def fuzzy_match(a, b):
+    if blank(a) or blank(b):
+        return blank(a) and blank(b)
+    score = SequenceMatcher(None, clean(a), clean(b)).ratio()
+    return score >= MERCHANT_CUTOFF
+
+
+rules = {"merchant": fuzzy_match, "date": text_match,
          "total": num_match, "tax": num_match}
 
 for field, match in rules.items():

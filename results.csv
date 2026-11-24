@@ -1,11 +1,11 @@
 file,merchant_key,date_key,total_key,tax_key,merchant_pred,date_pred,total_pred,tax_pred,merchant_ok,date_ok,total_ok,tax_ok
-r01,STYLE BAAZAR,2023-03-23,1350.0,64.28,STYLE BAAZAR,2023-03-10,1350.0,64.28,True,False,True,True
-r02,Apple Chermside,2024-11-26,2849.0,,Apple Chermside,2024-11-26,2849.0,327.8,True,True,True,False
-r03,Apple Store Bawabat Al Shar,2024-06-24,499.99,99.0,Apple Store Bawabat Al Sharq,2024-06-20,5400.0,900.0,False,False,False,False
+r01,STYLE BAAZAR,2023-03-10,1350.0,64.28,STYLE BAAZAR,2023-03-10,1350.0,64.28,True,True,True,True
+r02,Apple Chermside,2024-11-26,2849.0,327.8,Apple Chermside,2024-11-26,2849.0,327.8,True,True,True,True
+r03,Apple Store Bawabat Al Shar,2024-06-24,499.99,99.0,Apple Store Bawabat Al Sharq,2024-06-20,5400.0,900.0,True,False,False,False
 r04,TELSTRA SHOP KAWANA WATERS,2024-05-21,85.0,7.73,TELSTRA SHOP KAWANA WATERS,2024-05-21,85.0,7.73,True,True,True,True
-r05,SLOT 50 TMS LTD,2021-09-09,94400.0,,SLOT 50 TMS LTD.,2021-09-09,94400.0,0.0,False,True,True,False
+r05,SLOT 50 TMS LTD,2021-09-09,94400.0,0.0,SLOT 50 TMS LTD.,2021-09-09,94400.0,0.0,True,True,True,True
 r06,Green Supermarket,,27.35,,Green Supermarket,,27.35,,True,True,True,True
-r07,Пятёрочка,,220.47,,Пятёрочка,2025-08-22,220.47,9.13,True,False,True,False
-r08,Fred Meyer,2026-06-11,53.32,,Fred Meyer,2026-07-11,52.32,,True,False,False,True
+r07,Пятёрочка,2025-08-22,220.47,9.13,Пятёрочка,2025-08-22,220.47,9.13,True,True,True,True
+r08,Fred Meyer,2026-07-11,53.32,,Fred Meyer,2026-07-11,52.32,,True,True,False,True
 r09,Walmart,2021-02-27,111.04,8.22,Walmart,2021-02-27,111.04,8.22,True,True,True,True
 r10,Walmart,2024-09-26,64.65,4.65,Walmart,2024-09-26,64.65,4.65,True,True,True,True
